@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Book  Store</title>
+    <title>Online Book Store</title>
     <link rel="stylesheet" href="this.css">
     <style>
         *{
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
         .header{
             background: rgb(176, 88, 21);
@@ -17,16 +18,25 @@
             font-size: 30px;
             display: flex;
             align-items: center;
+            padding-left: 20px;
+        }
+        .logo {
+            height: 70px; 
+            width: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .logo img{
-            width: 21%;
-            height : 21%;
-            text-align: center;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         .title{
             font-weight: bold;
             flex :1;
             text-align: center;
+            margin-right: 90px;
         }
         .menu{
             display: flex;
@@ -73,7 +83,7 @@
 <body>
     <div class = "header">
         <div class = "logo" >
-            <img  src ="logo.jpg" alt = "logo">
+            <img src="logo.jpg" alt="GL Bajaj Logo">
         </div>
         <div class = "title">Website Name</div>
     </div>
